@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+   background-color: black;
+	font-family: 'Times New Roman', Times, serif;
+}
+.search{
+	padding-bottom: 10px;
+	align-items: center;
+	display: flex;
+	gap: 10px;
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+nav li a{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+}
+nav li a:hover{
+	background-color: white;
+	color: black;
+}
+.search label{
+	color: white;
+	padding: 5px 10px;
+}
+.search label:hover{
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: grey;
+}
+footer .link a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.2rem;
+	transition: .5s;
+}
+footer .link a:hover{
+	text-decoration: underline;
+	font-size: 1.3rem;
+}
+footer .link p{
+	color: white;
+	font-size: 1.2rem;
+}
+.search input{
+	padding: 3px 5px;
+	border-radius: 4px;
+}
+.toggle{
+	background: none;
+	border: none;
+	color: white;
+	font-size: 2rem;
+}
+.cart{
+	background: none;
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+}
+.links{
+	position: fixed;
+	background-color: grey;
+	text-align: center;
+	padding-top: 25vh;
+	left: -100%;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	z-index: 1;
+	font-size: 1.5rem;
+	transition: .5s;
+}
+.carousel img{
+	height: 70vh;
+}
+.links_visible{
+	display: block;
+	transition: .5s;
+	left: 0;
+}
+.card{
+	transition: .4s;
+}
+.card:hover{
+	transform: scale(1.1);
+	transition: .4s;
+	cursor: pointer;
+}
+.add{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 25px;
+   transition: all .5s;
+}
+.agrandado{
+   width: 100%;
+   max-width: 70%;
+	margin: auto;
+   border-radius: 5px;
+   background-color: rgb(128, 128, 128);
+   z-index: 1;
+   position: absolute;
+   padding: 20px 15px;
+   transition: all .5s;
+	backdrop-filter: blur(6px);
+}
+.buy{
+   display: none;
+}
+.buy_display{
+	display: flex;
+	flex-direction: column;
+   gap: 10px;
+}
+.buy h3{
+	color: white;
+	text-decoration: underline;
+	font-size: 2rem;
+}
+.buy p{
+	text-transform: capitalize;
+	color: rgb(0, 0, 0);
+}
+.buy button{
+	padding: 7px 15px;
+	border-radius: 5px;
+	border: 0;
+	background-color: rgb(54, 54, 54);
+	color: white;
+	width: fit-content;
+	transition: all .4s;
+}
+.buy button:hover{
+	transition: all .7s;
+	transform: scale(1.1);
+	background-color: black;
+	box-shadow: 0rem 0rem 1rem 0.5rem black;
+}
+textarea{
+   min-height: 120px;
+   max-height: 120px;
+   resize: none;
+}
+input[type="submit"]{
+	background: white;
+	color: black;
+	padding: 6px 10px;
+	font-size: 1rem;
+	border-radius: 10px;
+}
+input[type="submit"]:hover{
+	opacity: .7;
+}
+form#login{
+	margin: 20px 0;
+	height: 50vh;
+	background-color: grey;
+	border: 2px solid white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+form#login h2{
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+form#login input{
+	width: 30%;
+	padding: 3px 20px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+form#login input[type="button"]{
+	padding: 7px 15px;
+	border-radius: 5px;
+	border: 0;
+	background-color: rgb(54, 54, 54);
+	color: white;
+	width: fit-content;
+	transition: all .4s;
+}
+form#login input[type="button"]:hover{
+	transition: all .7s;
+	transform: scale(1.1);
+	background-color: black;
+	box-shadow: 0rem 0rem 1rem 0.5rem black;
+}
+form#login a{
+	text-decoration: none;
+	color: white;
+	text-decoration: underline;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+@media (max-width: 992px) {
+	nav a img{
+		width: 370px;
+	}
+}
+@media (max-width: 768px) {
+	nav a img{
+		width: 275px;
+	}
+	.toggle{
+		font-size: 1.4rem;
+	}
+	.cart{
+		font-size: 1.2rem;
+	}
+	.search input {
+		font-size: .8rem;
+	}
+}
+@media (max-width: 576px) {
+	nav a img{
+		width: 170px;
+	}
+}
